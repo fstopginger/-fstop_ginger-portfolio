@@ -1,25 +1,41 @@
-<!--Sticky Navigation-->
-
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-      </head>
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
 <body>
 
-<h2>Responsive Image</h2>
-<p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
+<h2>Images Side by Side</h2>
+<p>How to create side-by-side images with the CSS float property:</p>
 
-
-
-     <div class="row">
+<div class="row">
   <div class="column">
-    <img src="images/1.jpg" alt="Snow" style="width:50%">
+    <img src="images/1.jpg" alt="Snow" style="width:100%">
   </div>
   <div class="column">
-    <img src="images/2.jpg" alt="Forest" style="width:50%">
- 
+    <img src="images/2.jpg" alt="Forest" style="width:100%">
   </div>
-</div> 
+  <div class="column">
+    <img src="images/3.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
 </body>
 </html>
