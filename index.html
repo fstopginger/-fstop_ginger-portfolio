@@ -8,9 +8,22 @@
       margin: 0;
       font-family: Arial, sans-serif;
     }
+    .menu {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      z-index: 1000;
+    }
+    .content {
+      padding-top: 60px; /* Ensure the content doesn't overlap with the fixed menu */
+    }
     .gallery {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 10px;
       padding: 10px;
     }
@@ -26,20 +39,34 @@
     }
     @media (max-width: 800px) {
       .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 500px) {
+      .gallery {
         grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
-  <div class="gallery">
-    <div class="gallery-item">
-      <img src="images/1.JPG" alt="Art 1">
+  <div class="menu">
+    <!-- Add your menu items here -->
+    Home | Gallery | About | Contact
+  </div>
+  <div class="content">
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/1.JPG" alt="Art 1">
+      </div>
+      <div class="gallery-item">
+        <img src="images/2.JPG" alt="Art 2">
+      </div>
+      <div class="gallery-item">
+        <img src="images/3.JPG" alt="Art 3">
+      </div>
+      <!-- Add more gallery items here -->
     </div>
-    <div class="gallery-item">
-      <img src="images/2.JPG" alt="Art 2">
-    </div>
-    <!-- Add more gallery items here -->
   </div>
 </body>
 </html>
