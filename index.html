@@ -59,6 +59,35 @@
     .dropdown ul {
       padding-left: 20px;
     }
+    .gallery-page {
+      padding-top: 60px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+    .gallery-item {
+      overflow: hidden;
+      aspect-ratio: 3/2;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    @media (max-width: 800px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 500px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -67,21 +96,34 @@
       <li><a href="#">Home</a></li>
       <li><a href="#">Gallery</a>
         <ul class="dropdown">
-          <li><a href="#">From The Edge</a></li>
-          <li><a href="#">Rare Fiction</a></li>
-          <li><a href="#">Symphony of the Mountains</a></li>
-          <li><a href="#">Jeff Lane</a></li>
-          <li><a href="#">Asylum Suite</a></li>
-          <li><a href="#">Hannah Unsalted</a></li>
-          <li><a href="#">Jason Lloyd</a></li>
+          <li><a href="from-the-edge.html">From The Edge</a></li>
+          <li><a href="rare-fiction.html">Rare Fiction</a></li>
+          <li><a href="symphony-of-the-mountains.html">Symphony of the Mountains</a></li>
+          <li><a href="jeff-lane.html">Jeff Lane</a></li>
+          <li><a href="asylum-suite.html">Asylum Suite</a></li>
+          <li><a href="hannah-unsalted.html">Hannah Unsalted</a></li>
+          <li><a href="jason-lloyd.html">Jason Lloyd</a></li>
         </ul>
       </li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </div>
-  <div class="content" style="padding-top: 60px;">
-    <!-- Your gallery content here -->
+
+  <!-- Example gallery page layout -->
+  <div class="gallery-page">
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/your-image1.JPG" alt="Art 1">
+      </div>
+      <div class="gallery-item">
+        <img src="images/your-image2.JPG" alt="Art 2">
+      </div>
+      <div class="gallery-item">
+        <img src="images/your-image3.JPG" alt="Art 3">
+      </div>
+      <!-- Add more gallery items here -->
+    </div>
   </div>
 </body>
 </html>
