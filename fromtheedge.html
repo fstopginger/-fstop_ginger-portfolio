@@ -10,8 +10,7 @@
     }
     .gallery {
       display: grid;
-      grid-template-rows: repeat(3, auto);
-      grid-auto-flow: column;
+      grid-template-columns: repeat(3, 1fr);
       gap: 10px;
       padding: 10px;
     }
@@ -27,12 +26,12 @@
     }
     @media (max-width: 800px) {
       .gallery {
-        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
       }
     }
     @media (max-width: 500px) {
       .gallery {
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
       }
     }
   </style>
