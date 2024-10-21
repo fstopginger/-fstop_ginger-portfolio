@@ -4,6 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    .menu {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      z-index: 1000;
+    }
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .menu li {
+      display: inline-block;
+      position: relative;
+    }
+    .menu a {
+      color: white;
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+    }
+    .menu a:hover {
+      background: #444;
+    }
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #333;
+      display: none;
+      transition: opacity 0.3s ease;
+      z-index: 1000;
+    }
+    .dropdown li {
+      display: block;
+    }
+    .menu li:hover > .dropdown {
+      display: block;
+      opacity: 1;
+    }
+    .menu .scrollable {
+      max-height: 200px;
+      overflow-y: auto;
+    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
