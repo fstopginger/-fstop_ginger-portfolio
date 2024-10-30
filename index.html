@@ -91,6 +91,14 @@ img {vertical-align: middle;}
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/* Responsive dots */
+.dots-container {
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+}
 </style>
 </head>
 <body>
@@ -125,7 +133,7 @@ img {vertical-align: middle;}
 <br>
 
 <!-- The dots/bullets -->
-<div style="text-align:center">
+<div class="dots-container">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
@@ -162,6 +170,5 @@ function showSlides(n) {
 
 </body>
 </html>
-
 
 
