@@ -1,56 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif; margin: 0; background-color: black; color: white;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  background-color: black;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-.thumbnails {
-  display: none;
-  justify-content: center;
-  overflow-x: auto;
-  background
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome to My Photography Portfolio</h1>
+        <p>Your welcome message here</p>
+        <!-- Add a banner image or slideshow here -->
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <!-- Gallery of images -->
+        <div class="gallery-container">
+            <!-- Individual images here -->
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Your biography here</p>
+    </section>
+    <section id="services">
+        <h2>Services</h2>
+        <p>Details about your services and pricing</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
