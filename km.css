@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #121212; /* Dark background for the whole site */
+    color: #b3b3b3; /* Bright grey text color */
 }
 
 header {
