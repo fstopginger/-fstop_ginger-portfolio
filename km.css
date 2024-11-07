@@ -67,6 +67,12 @@ section {
     max-width: 300px;
 }
 
+section {
+    padding: 100px 50px;
+    text-align: center;
+    margin-top: 60px; /* Adjust this value based on your header height */
+}
+
 /* Responsive layout */
 @media (max-width: 768px) {
     nav ul {
@@ -79,5 +85,6 @@ section {
 
     section {
         padding: 20px;
+        margin-top: 80px; /* Ensure consistent spacing on smaller screens */
     }
 }
