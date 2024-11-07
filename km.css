@@ -41,7 +41,7 @@ nav ul li a:hover {
 section {
     padding: 100px 50px;
     text-align: center;
-    margin-top: 60px; /* Adjust this value based on your header height */
+    margin-top: 40px; /* Adjust this value based on your header height */
 }
 
 .heading-container {
