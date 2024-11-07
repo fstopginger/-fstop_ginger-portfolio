@@ -19,12 +19,13 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: nowrap;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
 }
 
 nav ul li {
-    margin: 0 10px; /* Adjusted value to make the links closer together */
+    margin: 0 5px; /* Adjusted value to add padding between links */
 }
 
 nav ul li a {
@@ -41,7 +42,7 @@ nav ul li a:hover {
 section {
     padding: 100px 50px;
     text-align: center;
-    margin-top: 40px; /* Adjust this value based on your header height */
+    margin-top: 60px; /* Adjust this value based on your header height */
 }
 
 .heading-container {
@@ -70,20 +71,15 @@ section {
 
 /* Specific styles for About Me section */
 #about {
-    padding-left: 50px; /* Adjust the value to increase left padding */
-    padding-right: 50px; /* Adjust the value to increase right padding */
-}
-
-section {
-    padding: 100px 100px;
-    text-align: center;
-    margin-top: 60px; /* Adjust this value based on your header height */
+    padding-left: 100px; /* Adjust the value to increase left padding */
+    padding-right: 100px; /* Adjust the value to increase right padding */
 }
 
 /* Responsive layout */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: row; /* Keeps the menu horizontal on smaller screens */
+        flex-direction: row;
+        justify-content: flex-start; /* Aligns items to the start */
     }
 
     nav ul li {
