@@ -42,7 +42,7 @@ nav ul li a:hover {
 section {
     padding: 100px 50px;
     text-align: center;
-    margin-top: 60px; /* Adjust this value based on your header height */
+    margin-top: 40px; /* Adjusted this value to reduce space */
 }
 
 .heading-container {
@@ -72,7 +72,7 @@ section {
 /* Specific styles for About Me section */
 #about {
     padding-left: 100px; /* Adjust the value to increase left padding */
-    padding-right: 30px; /* Adjust the value to increase right padding */
+    padding-right: 100px; /* Adjust the value to increase right padding */
 }
 
 /* Responsive layout */
@@ -88,6 +88,6 @@ section {
 
     section {
         padding: 20px;
-        margin-top: 80px; /* Ensure consistent spacing on smaller screens */
+        margin-top: 60px; /* Ensure consistent spacing on smaller screens */
     }
 }
