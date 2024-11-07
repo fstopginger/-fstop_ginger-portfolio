@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #303834;
+    background-color: #333;
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -24,7 +24,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px; /* Adjusted value to make the links closer together */
 }
 
 nav ul li a {
@@ -41,6 +41,7 @@ nav ul li a:hover {
 section {
     padding: 100px 50px;
     text-align: center;
+    margin-top: 60px; /* Adjust this value based on your header height */
 }
 
 .heading-container {
@@ -67,6 +68,12 @@ section {
     max-width: 300px;
 }
 
+/* Specific styles for About Me section */
+#about {
+    padding-left: 100px; /* Adjust the value to increase left padding */
+    padding-right: 100px; /* Adjust the value to increase right padding */
+}
+
 section {
     padding: 100px 50px;
     text-align: center;
@@ -80,7 +87,7 @@ section {
     }
 
     nav ul li {
-        margin: 5px;
+        margin: 5px; /* Adjusted value for smaller screens */
     }
 
     section {
