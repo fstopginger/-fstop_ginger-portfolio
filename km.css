@@ -72,7 +72,7 @@ section {
 /* Specific styles for About Me section */
 #about {
     padding-left: 100px; /* Adjust the value to increase left padding */
-    padding-right: 100px; /* Adjust the value to increase right padding */
+    padding-right: 30px; /* Adjust the value to increase right padding */
 }
 
 /* Responsive layout */
