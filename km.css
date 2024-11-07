@@ -82,7 +82,7 @@ section {
 @media (max-width: 768px) {
     nav ul {
         flex-direction: row;
-        justify-content: flex-start; /* Aligns items to the start */
+        justify-content: flex-start; /* Aligns items to the start */Welcome to My Photography Portfolio
     }
 
     nav ul li {
