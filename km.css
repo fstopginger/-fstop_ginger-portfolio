@@ -64,9 +64,10 @@ section {
 }
 
 .gallery-container img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
+    display: block; /* Ensures the image behaves like a block element */
+    width: 100%;    /* Makes the image take up 100% of its parent container's width */
+    height: auto;   /* Maintains the aspect ratio of the image */
+    max-width: 300px; /* Ensures images do not exceed a certain width */
 }
 
 /* Specific styles for About Me section */
@@ -88,6 +89,6 @@ section {
 
     section {
         padding: 20px;
-        margin-top: 80px; /* Ensure consistent spacing on smaller screens */
+        margin-top: 60px; /* Ensure consistent spacing on smaller screens */
     }
 }
